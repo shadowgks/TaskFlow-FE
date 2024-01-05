@@ -1,27 +1,47 @@
-# TaskFlowFE
+# Aftas Sports Club Competition Management
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+## Overview
+The Aftas Sports Club, based in Mirleft, Tiznit, is dedicated to various sports like Surfing, Tennis, Quad Biking, Underwater Fishing, and Paragliding. Their specialty lies in organizing underwater fishing competitions across Morocco and they are aiming to streamline their management process with a responsive web application.
 
-## Development server
+### For the Frontend (Angular) development, here are the outlined user stories:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Admin Features:
 
-## Code scaffolding
+1. Add Competition
+2. Assign a unique code for each competition.
+3. Input date, start time, end time, participant count, and location.
+4. View Competitions List with Filters
+5. Filter ongoing competitions.
+6. Filter closed competitions.
+7. Register Members for a Competition
+8. Search for a member using number, name, or surname.
+9. Register members who aren't already enlisted for a competition.
+10. Record Competition Result
+11. Log the number of fishes caught during the competition.
+12. Confirm participation after entering the result.
+13. View Podium
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Steps to run the application
 
-## Build
+```bash
+# Clone the repository
+git clone https://github.com/shadowgks/AppGCM-FrontEnd
+```
+```bash
+# Go to the front-end directory
+cd AppGCM
+```
+```bash
+# install dependencies
+npm install
+```
+```bash
+# Run the application
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Resources
 
-## Running unit tests
+[Backend repository](https://github.com/shadowgks/AppGCM)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Canva Presentation](https://www.canva.com/design/DAF3WU10IBE/OhjXvqL-PUy_bDxDsu1qxw/edit?utm_content=DAF3WU10IBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)

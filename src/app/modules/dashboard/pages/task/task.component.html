@@ -1,0 +1,14 @@
+<div class="mx-auto px-4 py-4 sm:px-8 lg:container">
+    <!-- Header -->
+    <app-task-header></app-task-header>
+
+    <!-- Content -->
+    <button (click)="increment()">Increment</button>
+
+    <div>Current Count: {{ count$ | async }}</div>
+    
+    <button (click)="decrement()">Decrement</button>
+    
+    <button (click)="reset()">Reset Counter</button>
+    <!-- // -->
+</div>
