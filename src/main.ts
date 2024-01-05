@@ -6,6 +6,9 @@ import { environment } from './environments/environment'
 import { AppComponent } from './app/app.component';
 import { AppRoutingModule } from './app/app-routing.module';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { provideStore } from '@ngrx/store';
+import { reducers, metaReducers } from './app/reducers';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 if (environment.production) {
     enableProdMode()
@@ -16,9 +19,12 @@ if (environment.production) {
 }
 
 bootstrapApplication(AppComponent, {
-    providers: [importProvidersFrom(BrowserModule, AppRoutingModule)]
-})
-    .catch((err) => console.error(err))
+    providers: [
+        importProvidersFrom(BrowserModule, AppRoutingModule), 
+        provideStore(reducers, { metaReducers }), 
+        provideAnimations()
+    ]
+}).catch((err) => console.error(err))
 
 function selfXSSWarning() {
     setTimeout(() => {
